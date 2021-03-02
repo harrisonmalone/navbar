@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 80px;
+  background: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo a {
+  font-size: 40px;
+}
+
+.links {
+  margin-right: 20px;
+}
+
+.links a {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.say-hello {
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.say-hello:hover {
+  opacity: 0.7;
+}
+
+.button-outline:focus {
+  outline: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-links {
+  display: none;
+}
+
+.hamburger-links li {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.hamburger-links li a {
+  color: black;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background: white;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
